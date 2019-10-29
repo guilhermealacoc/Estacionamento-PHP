@@ -20,9 +20,9 @@
           <h1>Cadastro Estacionamento</h1>
         <hr>
           <input type="hidden" name="id"  />
-          Carro:
+           Carro:
           <input type="text" name="carro" />
-          Placa:
+           Placa:
           <input type="text" name="placa" />
           <input type="submit" value="salvar" />
           <input type="reset" value="Novo" />
