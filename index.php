@@ -27,6 +27,25 @@
           <input type="submit" value="salvar" />
           <input type="reset" value="Novo" />
         <hr>
+        <?php 
+            $conn = new PDO("mysql:dbname=teste_pdo;host=localhost", "root", "");
+
+            $stmt = $conn->prepare("SELECT * FROM teste");
+
+            $stmt->execute();
+
+            $resultado = $stmt->fetchAll(PDO :: FETCH_ASSOC);
+
+            foreach ($resultado as $row){
+                
+                foreach ($row as $key => $value){
+
+                    echo "<strong>".$key."</strong>".$value."<br/>";
+
+                }
+                echo "<hr>";
+            }
+        ?>
     </form>
 </body>
 </html>
