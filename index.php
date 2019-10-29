@@ -6,7 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Estacionamento</title>
 </head>
+<?php 
+    try {
+        $conexao = new PDO("mysql:host=localhost; dbname=teste_pdo", "root", "");
+        $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conexao->exec("set names utf8");
+    } catch (PDOException $erro) {
+        echo "Erro na conexão:" . $erro->getMessage();
+    }
+?>
 <body>
-    <p>ESTACIONAMENTO EM PHP</p>
+    <form action="insert.php" method="POST" name="form1" >
+          <h1>Cadastro Estacionamento</h1>
+        <hr>
+          <input type="hidden" name="id"  />
+          Carro:
+          <input type="text" name="carro" />
+          Placa:
+          <input type="text" name="placa" />
+          <input type="submit" value="salvar" />
+          <input type="reset" value="Novo" />
+        <hr>
+    </form>
 </body>
 </html>
