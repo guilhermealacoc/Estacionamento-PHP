@@ -4,6 +4,7 @@
         $id = $_POST["id"];
 
         $stmt = $conexao->prepare("DELETE FROM teste WHERE id =  '$id' ");
+        //
 
         $stmt->execute();
 

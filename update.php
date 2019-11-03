@@ -21,7 +21,7 @@
             <p>Digite o ID e asnovas informaçoes do carro</p>
         <hr>
             ID:
-          <input type="number" name="id"  />
+          <input type="text" name="id"  />
            Carro:
           <input type="text" name="carro" />
            Placa:

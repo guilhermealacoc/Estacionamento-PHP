@@ -16,12 +16,12 @@
     }
 ?>
 <body>
-    <form action="insert.php" method="POST" name="form1" >
+    <form action="delete_conn.php" method="POST" name="form1" >
           <h1>Cadastro Estacionamento</h1>
         <p>Digite o ID do veículo que deseja excluir</p>
-        <hr>;
+        <hr>
             ID:
-          <input type="number" name="id"  />
+          <input type="text" name="id"  />
           <input type="submit" value="EXCLUIR" />
         <hr>
         <?php 
