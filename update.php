@@ -16,17 +16,18 @@
     }
 ?>
 <body>
-    <form action="insert.php" method="POST" name="form1" >
+    <form action="update_conn.php" method="POST" name="form1" >
           <h1>Cadastro Estacionamento</h1>
+            <p>Digite o ID e asnovas informaçoes do carro</p>
         <hr>
-          <input type="hidden" name="id"  />
+            ID:
+          <input type="number" name="id"  />
            Carro:
           <input type="text" name="carro" />
            Placa:
           <input type="text" name="placa" />
-          <input type="submit" value="salvar" />
-          <a href="delete.php">DELETAR</a>
-          <a href="update.php">ATUALIZAR</a>
+        
+          <input type="submit" value="Atualizar" />
         <hr>
         <?php 
             $conn = new PDO("mysql:dbname=teste_pdo;host=localhost", "root", "");

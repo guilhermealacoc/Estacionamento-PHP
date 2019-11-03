@@ -18,15 +18,11 @@
 <body>
     <form action="insert.php" method="POST" name="form1" >
           <h1>Cadastro Estacionamento</h1>
-        <hr>
-          <input type="hidden" name="id"  />
-           Carro:
-          <input type="text" name="carro" />
-           Placa:
-          <input type="text" name="placa" />
-          <input type="submit" value="salvar" />
-          <a href="delete.php">DELETAR</a>
-          <a href="update.php">ATUALIZAR</a>
+        <p>Digite o ID do veículo que deseja excluir</p>
+        <hr>;
+            ID:
+          <input type="number" name="id"  />
+          <input type="submit" value="EXCLUIR" />
         <hr>
         <?php 
             $conn = new PDO("mysql:dbname=teste_pdo;host=localhost", "root", "");
