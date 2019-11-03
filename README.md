@@ -1,5 +1,5 @@
 # Estacionamento-PHP
-Sistema de controle básico para estacionamentos com PHP
+Sistema de controle básico para estacionamentos com PHP COM HORA DE SAÍDA E ENTRADA
 
 Desenvolvido na disciplina de Desenvolvimento para Servidores I
 
